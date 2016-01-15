@@ -1,0 +1,204 @@
+*{ box-sizing: border-box; }
+body { background-color: #F7F7F7; }
+
+#carrousel-elems > div {
+  position: relative;
+  display: inline-block;
+  float: left;
+
+  height: auto;
+  margin: 0px 40px;
+  padding: 20px;
+}
+
+/* First circle completed */
+#carrousel-elems > #radial1 .arc {
+  fill: #445d1c;
+}
+/* First circle uncomplete */
+#carrousel-elems > #radial1 .component path{
+  fill: #9ccd4b;
+}
+/* First circle tablet title */
+#carrousel-elems > #radial1 .values .tablet h1{
+  color: #9ccd4b;
+}
+/* First circle mobile title */
+#carrousel-elems > #radial1 .values .mobile h1{
+  color: #445d1c;
+}
+
+/* Second circle completed */
+#carrousel-elems > #radial2 .arc {
+  fill: #2a4759;
+}
+/* Second circle uncomplete */
+#carrousel-elems > #radial2 .component path{
+  fill: #8cc2df;
+}
+/* First circle tablet title */
+#carrousel-elems > #radial2 .values .tablet h1{
+  color: #8cc2df;
+}
+/* First circle mobile title */
+#carrousel-elems > #radial2 .values .mobile h1{
+  color: #2a4759;
+}
+
+/* Third circle completed */
+#carrousel-elems > #radial3 .arc {
+  fill: #a14e23;
+}
+/* Third circle uncomplete */
+#carrousel-elems > #radial3 .component path{
+  fill: #e3bc3b;
+}
+/* First circle tablet title */
+#carrousel-elems > #radial3 .values .tablet h1{
+  color: #e3bc3b;
+}
+/* First circle mobile title */
+#carrousel-elems > #radial3 .values .mobile h1{
+  color: #a14e23;
+}
+
+/* General */
+/* Circle title */
+/* Circle description */
+#carrousel-elems .component text.label{
+  color: #a9a9a9;
+  fill: #a9a9a9;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Circle value */
+#carrousel-elems .labels text.label{
+  font-size: 22px !important;
+}
+
+/* Details */
+#carrousel-elems .values{
+  position: absolute;
+  display: block;
+  float: left;
+
+  width: 90%;
+  height: auto;
+  top: 200px;
+  left: 5%;
+
+  border-bottom: 1px solid lightgray;
+}
+#carrousel-elems .values .mobile, #carrousel-elems .values .tablet{
+  position: relative;
+  display: inline-block;
+
+  width: 50%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+#carrousel-elems .values .tablet{
+  float: left;
+  text-align: left;
+}
+#carrousel-elems .values .mobile{
+  float: right;
+  text-align: right;
+}
+
+#carrousel-elems .values{
+  font-family: Myriad, "Helvetic Neue", Helvetica, Arial;
+}
+#carrousel-elems .values h1{
+  margin: 0px;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  font-weight: bold;
+}
+#carrousel-elems .values p{
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: black;
+}
+#carrousel-elems .values p span{
+  margin-left: 6px;
+  color: grey;
+}
+
+
+/* EXTRA: Carrousel effect */
+html, body{
+  background: #ddd;
+  overflow-x: hidden;
+}
+#carrousel{
+  position: relative;
+  display: block;
+  float: left;
+
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+
+  text-align: center;
+
+  background: #f7f7f7;
+  border: 1px dotted gray;
+  z-index: 20;
+}
+#carrousel-elems{
+  position: relative;
+  display: block;
+  float: none;
+
+  width: 100%;
+  height: 340px;
+  margin: 0px auto;
+
+  transition: all 0.3s;
+}
+#carrousel-paginator{
+  position: relative;
+  display: block;
+  float: none;
+
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+
+  text-align: center;
+}
+#carrousel-paginator .dot{
+  position: relative;
+  display: inline-block;
+  float: none;
+
+  width: 8px;
+  height: 8px;
+  top: 0px;
+  left: 0px;
+  padding: 0px;
+  margin: 0px 10px;
+
+  background: white;
+  border: 1px solid grey;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#carrousel-paginator .dot.active{
+  width: 13px;
+  height: 13px;
+  top: 2.5px;
+  margin: 0px 5px;
+
+  background: gray;
+}
+
+button{
+  z-index: 50;
+}

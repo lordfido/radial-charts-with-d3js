@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>Graph Carrousel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <!-- Vendors -->
+    <link rel="stylesheet" type="text/css" href="vendors/radialProgress.css" />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+
+    <button id="new-chart" type="button">Add random chart</button>
+    <br />
+    <br />
+
+    <div id="carrousel">
+      <div id="carrousel-elems" style="margin-left: 0px;"></div>
+      <div id="carrousel-paginator"></div>
+    </div>
+
+    <!-- Vendors -->
+    <script type="text/javascript" src="vendors/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="vendors/radialProgress.js"></script>
+
+    <!-- App scripts -->
+    <script type="text/javascript" src="js/mock-data.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/models/graph-model.js"></script>
+    <script type="text/javascript" src="js/views/carrousel-generator.js"></script>
+    <script type="text/javascript" src="js/controllers/event-controller.js"></script>
+  </body>
+</html>
